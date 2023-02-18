@@ -18,10 +18,18 @@
  * When prompted for ssh user@hostname, enter in that format `ssh -p 22 <os_username>@<rpi_ip_address>`.
 
 
+## Update and upgrade Linux package information
+First things first:
+```shell
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+`sudo` gives root privilege.
 
 
 ## Install Git
-```
+```shell
 sudo apt install git
 ```
 
