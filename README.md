@@ -99,21 +99,6 @@ Install Node.js from the NodeSource Repository, a third party service which reso
    pip3 install smbus2
    ```
 
-### Up & Running LocalTunnel
-1. Install localtunnel globally to use localtunnel command `lt` directly from anywhere
-  ```cmd
-  npm install -g localtunnel
-  ```
-  If localtunnel is not installed globally then full path to *lt* executable have to be used, which will be something like `/home/pi/.../mode_modules/.bin/lt`.
-  
-2. Forward a local port specifying a subdomain:
-  ```cmd
-  lt --subdomain <subdomain_name> --port <port_number>
-  # example
-  lt --subdomain my-unique-subdomain-name --port 8080
-  ```
-
-
 ## Add command to execute on boot
 * Edit `/etc/rc.local` with root permission and commands before `exit` command.
 
@@ -162,7 +147,7 @@ To know about the ending `&`, check *How to run a process in the background* in 
 
 
 ## Enable the 1-Wire Interface
-*(Coutesy: circuitbasics.com)*  
+*(Courtesy: circuitbasics.com)*  
 We’ll need to enable the One-Wire interface before the Pi can receive data from the sensor. Once you’ve connected the DS18B20, power up your Pi and log in, then follow these steps to enable the One-Wire interface:
 
 * At the command prompt, enter `sudo nano /boot/config.txt`, then add this to the bottom of the file:
@@ -182,6 +167,21 @@ If any `dtoverlay=` is already there, doesn't matter; add one more at bottom.
 * Enter `ls` to list the devices. Something like `28-xxxxxxxxxxx w1_bus_master1` will be displayed.
 
 * Go to `28-xxxxxxxxxxx` directory and type `cat w1_slave` to see the temperature value from sensor.
+
+
+### [Extra] Install LocalTunnel (proxy tool)
+1. Install localtunnel globally to use localtunnel command `lt` from anywhere
+  ```cmd
+  npm install -g localtunnel
+  ```
+  If not installed globally then full path to *lt* executable have to be used, which will be something like `/home/pi/.../mode_modules/.bin/lt`.
+  
+2. Forward a local port specifying a subdomain:
+  ```cmd
+  lt --subdomain <subdomain_name> --port <port_number>
+  # example
+  lt --subdomain my-unique-subdomain-name --port 8080
+  ```
 
 
 
