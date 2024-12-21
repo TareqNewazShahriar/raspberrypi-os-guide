@@ -1,21 +1,29 @@
 # Working with Raspberry PI OS
 
 ## Installing OS on SD Card
-* Install Raspberry PI OS Imager.
-* Plug the card reader with the memory card to the computer.
-* Run the Imager. https://www.raspberrypi.com/software/  
-  NOTE: Don't mistakenly connect Raspberry PI with memory card and try to install the OS (because... I forgotten and was mistakenly doing it).
- * From Imager settings, enable and enter hostname, SSH, Wifi, eventually configure everything.  
+* Install Raspberry PI OS Imager from https://www.raspberrypi.com/software/.
+* Plug the memory card with the computer.  
+  NOTE: Don't mistakenly plug the memory card with Raspberry PI and try to install the OS.
+* Run the Imager program.
+* From Imager settings, enable and enter hostname, SSH, Wifi, eventually configure everything.  
    Note: if you already have another active PI device, then make sure hostname are different.
- * Install entire *Remote Development* suite VSCode extensions to access and to do development in Raspberry PI.
- * Plug the memory card to Raspberry PI, connect to the computer usb, wait for a couple of minutes to load the OS.
- * Go to the Router admin panel and get the IP address of the RPI OS.
- * Start creating a new remote connection on the extension.
- * When prompted for ssh user@hostname, enter in that format `ssh -p 22 <os_username>@<rpi_ip_address>`.
 
+ 
 **How to choose the correct version of OS**
-  > - If you use the OS headless (i.e. without monitor), then install the *lite* version. Otherwise Recommended version is good to go.
-  > - If you want a bootable memory card to use in both 32bit and 64bit raspberry pi devices, then you have to install 32bit version of OS.
+- If you use the OS headless (i.e. without monitor), then install the *lite* version. Otherwise Recommended version is good to go.
+- If you want a bootable memory card to use in both 32bit and 64bit Raspberry pi devices, then you have to install 32bit version of OS.
+
+
+## How to connect and work with Raspberry PI from the computer
+* Plug the memory card to Raspberry PI.
+* Connect to the power either using a 5v charger or to the computer usb.
+* Wait for a couple of minutes to load the OS. It will automatically connect to the WIFI.
+* Go to the Router admin panel and get the IP address of the RPI.
+* Install entire *Remote Development* suite VSCode extensions to access and to do development in Raspberry PI.
+* Start creating a new remote connection on the extension.
+* When prompted for ssh user@hostname, enter in that format
+  `ssh -p 22 <os_username>@<rpi_ip_address>`.
+
 
 ## Update and upgrade Linux package information
 First things first:
