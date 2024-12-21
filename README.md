@@ -68,7 +68,7 @@ Go to https://deb.nodesource.com/ for command with latest version.
 
 ### NodeJS Install Steps for ARMv61 processor (RPi Zero W)
 
-1. Go to the unoffical builds download page of Node.js site and select the version of NodeJS you want to install. Copy the link of the ARMv6 version of NodeJS (Select the link with the .xz extension).
+1. Go to the _unoffical_ builds download page of Node.js site and select the version of NodeJS you want to install. Copy the link of the ARMv6 version of NodeJS (Select the link with the .xz extension).
 
 1. Download the file `wget <link>`. Example  
   ```sh
@@ -94,7 +94,7 @@ Go to https://deb.nodesource.com/ for command with latest version.
 
 1. Add the following line to the end of the file and hit Ctrl+X to save, and then hit 'y' and enter to confirm the changes: `PATH=$PATH:/usr/local/bin`.
 
-1. Reboot and checck is it working.
+1. Reboot and check is it working.
 
 
 **NOTE**: If running `node` command shows *exec format error* then undo the previous steps and try again. **Make sure** to add `PATH` variable to `.profile` and then reboot.
