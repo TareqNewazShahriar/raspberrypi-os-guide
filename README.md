@@ -109,7 +109,7 @@ Go to https://deb.nodesource.com/ for command with latest version.
    pip3 install smbus2
    ```
 
-## Add command to execute on boot
+## Execute certain command on boot
 * Edit `/etc/rc.local` with root permission and commands before `exit` command.
 
 Example
