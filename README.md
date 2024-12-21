@@ -52,13 +52,14 @@ git --version
 
 Install Node.js from the NodeSource Repository, a third party service which resolves the installation process.
 
-   ```
-   curl -sL https://deb.nodesource.com/setup_<version>.x | sudo bash -
-   ```
-   
-   ```
-   sudo apt install nodejs
-   ```
+```
+curl -sL https://deb.nodesource.com/setup_<version>.x | sudo bash -
+```
+
+```
+sudo apt-get install -y nodejs
+```
+Go to https://deb.nodesource.com/ for command with latest version.
 
 > NOTE  
 > * Try avoiding the process of downloading installer, extracting etc. For new Linux users, it can be a mess.
