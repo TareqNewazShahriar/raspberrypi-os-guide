@@ -19,8 +19,8 @@
 * Plug the memory card to Raspberry PI.
 * Connect to the power either using a 5v charger or to the computer usb.
 * Wait for a couple of minutes to load the OS. It will automatically connect to the WIFI. Note: to change or add WIFI information, check **Usefull Notes** below.
-* Go to the Router admin panel and get the IP address of the RPI.
-* Install entire *Remote Development* suite VSCode extensions to access and to do development in Raspberry PI.
+* Go to the Router admin panel and get the IP address of the RPI to use as the hostname.
+* Putty can be used to access the RPI from command line or VSCode has extensions for that. Install entire **Remote Development** suite VSCode extensions (It will install a set of extensions. By Microsoft) to access and to do development in Raspberry PI. Also the extension **SSH-FS** is a useful one.
 * Start creating a new remote connection on the extension.
 * When prompted for ssh user@hostname, enter in that format
   `ssh -p 22 <os_username>@<rpi_ip_address>`.
