@@ -17,7 +17,7 @@
 ## How to connect and work with Raspberry PI from the computer
 * Plug the memory card to Raspberry PI.
 * Connect to the power either using a 5v charger or to the computer usb.
-* Wait for a couple of minutes to load the OS. It will automatically connect to the WIFI.
+* Wait for a couple of minutes to load the OS. It will automatically connect to the WIFI. Note: to change or add WIFI information, check **Usefull Notes** below.
 * Go to the Router admin panel and get the IP address of the RPI.
 * Install entire *Remote Development* suite VSCode extensions to access and to do development in Raspberry PI.
 * Start creating a new remote connection on the extension.
@@ -209,6 +209,18 @@ If any `dtoverlay=` is already there, doesn't matter; add one more at bottom.
 
 * Installing Node.js with NodeSource will resolve the *ARM* architecture and other compatibilities and downloads the correct version of the Node.js distribution. So Node.js installed with one model Raspberry PI may not run on other model(s). Like RPI3 is ARMv71, so Node.js ARMv71 distribution has to be installed to run on that machine. But after that this installation will not run on RPI Zero W, which is ARMv61. ARMv61 distribution of Node.js has to be installed too.
 
+* To change or add WIFI information diretly from the memory card: Wifi network information saved in `/etc/wpa_supplicant/wpa_supplicant.conf`.
+   To add new network information, add following block of code at the end of the file:
+   ```conf
+   network={
+      ssid="<ssid_name>"
+      psk="<plain_text_password>"
+   }
+   ```
+   > IMPORTANT
+   > *Don't use apostroph (') in wifi passwork.*
+
+
 ## Useful Linux terminal commands
 
 * Update & Upgrade PI OS
@@ -390,17 +402,6 @@ If any `dtoverlay=` is already there, doesn't matter; add one more at bottom.
    top -b -n1 > output.txt
    ```
    File will be saved in current directory.
-
-* Wifi network information saved in `/etc/wpa_supplicant/wpa_supplicant.conf`.
-   To add new network information, add following block of code at the end of the file:
-   ```conf
-   network={
-      ssid="<ssid_name>"
-      psk="<plain_text_password>"
-   }
-   ```
-   > IMPORTANT
-   > Don't use apostroph (') in wifi passwork.
 
 * System log path `/var/log/messages`. Additionally enable watch dog to do vigorous logging.
 
