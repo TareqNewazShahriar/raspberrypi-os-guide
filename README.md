@@ -15,6 +15,7 @@
 
 
 ## How to connect and work with Raspberry PI from the computer
+* To enable headless (aka. command-line/remote/SSH) access, after installing the OS, create an empty file `ssh` in the root directory of the memory card.
 * Plug the memory card to Raspberry PI.
 * Connect to the power either using a 5v charger or to the computer usb.
 * Wait for a couple of minutes to load the OS. It will automatically connect to the WIFI. Note: to change or add WIFI information, check **Usefull Notes** below.
