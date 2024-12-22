@@ -301,7 +301,11 @@ Note: If any `dtoverlay=` is already there, doesn't matter; add one more at bott
 
    Filtering processes
    ```
-   ps -e | grep <partial_process_name> # example: ps -e | grep node
+   ps -e | grep <partial_process_name>
+   ```
+   Example:
+   ```sh
+   ps -e | grep node
    ```
 
    Real-time process listing by CPU usage
@@ -320,7 +324,7 @@ Note: If any `dtoverlay=` is already there, doesn't matter; add one more at bott
   ```sh
   kill -9 <process_id>
   # or
-  kill -9 <process_name>`
+  kill -9 <process_name>
   ```
   - `-9` denotes SIGKILL; to see full list of *kill* parameters, use `kill -l`
 
