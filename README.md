@@ -18,7 +18,7 @@
 * To enable headless (i.e. command-line/SSH) access, after installing the OS, create an empty file `ssh` in the root directory of the memory card.
 * Plug the memory card to Raspberry PI.
 * Connect to the power either using a 5v charger or to the computer usb.
-* Wait for a couple of minutes to load the OS. It will automatically connect to the WIFI. Note: to change or add WIFI information, check **Usefull Notes** below.
+* Wait for a couple of minutes to boot the OS. It will automatically connect to the WIFI. Note: to change or add WIFI information, check **Usefull Notes** below.
 * Go to the Router admin panel and get the IP address of the RPI to use as the hostname.
 * Putty can be used to access the RPI from command line or VSCode has extensions for that. Install entire **Remote Development** suite VSCode extensions (It will install a set of extensions. By Microsoft) to access and to do development in Raspberry PI. Also the extension **SSH-FS** is a useful one.
 * Start creating a new remote connection on the extension.
