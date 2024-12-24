@@ -91,12 +91,8 @@ Go to https://deb.nodesource.com/ for command with latest version.
 
 1. You might have to do the following if you receive a *command not found* error.
   First, open the `.profile` file using nano: `sudo nano ~/.profile`
-
 1. Add the following line to the end of the file and hit Ctrl+X to save, and then hit 'y' and enter to confirm the changes: `PATH=$PATH:/usr/local/bin`.
-
 1. Reboot and check is it working.
-
-
 **NOTE**: If running `node` command shows *exec format error* then undo the previous steps and try again. **Make sure** to add `PATH` variable to `.profile` and then reboot.
 
 
@@ -196,6 +192,13 @@ Note: If any `dtoverlay=` is already there, doesn't matter; add one more at bott
   # example
   lt --subdomain my-unique-subdomain-name --port 8080
   ```
+
+
+## How to publicly access a web app running locally on RPI
+1. Need a static IP address from the ISP with a specific port (commonly 80) open allowing incoming request.
+2. Run the web app with node/
+3. If the RPI is connected on router Wifi, then forward the interal/localhost port to public. On TP-link, for to Advanced > Port Forwarding to map a new port to that local port.
+When coompleted
 
 
 
