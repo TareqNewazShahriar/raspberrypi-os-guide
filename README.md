@@ -194,12 +194,10 @@ Note: If any `dtoverlay=` is already there, doesn't matter; add one more at bott
   ```
 
 
-## How to publicly access a web app running locally on RPI
+## How to publicly access a web app, running locally on RPI
 1. Need a static IP address from the ISP with a specific port (commonly 80) open allowing incoming request.
-2. Run the web app with node/
-3. If the RPI is connected on router Wifi, then forward the interal/localhost port to public. On TP-link, for to Advanced > Port Forwarding to map a new port to that local port.
-When coompleted
-
+2. Run the web app with node/rginx/apache2 locally in RPI.
+4. If the RPI is connected with router Wifi, then forward the interal/localhost port to public. On TP-link, go to _Advanced_ > _Port Forwarding_ to map a port to that local port.
 
 
 ## TroubleShooting
