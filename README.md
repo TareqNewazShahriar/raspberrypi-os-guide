@@ -47,7 +47,6 @@ git --version
 ```
 
 
-
 ## Install Node.js
 
 Install Node.js from the NodeSource Repository, a third party service which resolves the installation process.
@@ -68,7 +67,7 @@ Go to https://deb.nodesource.com/ for command with latest version.
 
 ### NodeJS Install Steps for ARMv61 processor (RPi Zero W)
 
-1. Go to the _unoffical_ builds download page of Node.js site and select the version of NodeJS you want to install. Copy the link of the ARMv6 version of NodeJS (Select the link with the .xz extension).
+1. Go to the _unoffical_ builds download page of Node.js site and select the version of NodeJS you want to install. Copy the link of the ARMv6 version of NodeJS (Select the link with the `.xz` extension).
 
 1. Download the file `wget <link>`. Example  
   ```sh
@@ -85,7 +84,10 @@ Go to https://deb.nodesource.com/ for command with latest version.
   sudo cp -R node-v14.13.0-linux-armv6l/* /usr/local
   ```
 
-1. Reboot and check everything is working correctly `node -v && npm -v`.
+1. Reboot and check everything is working correctly
+   ```sh
+   node -v && npm -v`.
+   ```
 
 **Extra steps**
 
