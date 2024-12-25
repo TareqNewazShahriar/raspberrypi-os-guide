@@ -14,7 +14,7 @@
 - If you want a bootable memory card to use in both 32bit and 64bit Raspberry pi devices, then you have to install 32bit version of OS.
 
 
-## How to connect and work with Raspberry PI from the computer
+## How to connect and work with Raspberry PI from a computer from command line (i.e. headleass)
 * To enable headless (i.e. command-line/SSH) access, after installing the OS, create an empty file `ssh` in the root directory of the memory card.
 * Plug the memory card to Raspberry PI.
 * Connect to the power either using a 5v charger or to the computer usb.
